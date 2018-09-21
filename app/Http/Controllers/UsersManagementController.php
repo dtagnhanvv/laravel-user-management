@@ -60,9 +60,9 @@ class UsersManagementController extends Controller
      */
     public function show($id)
     {
-        $user = config('laravelusers.defaultUserModel')::find($id);
+        //TODO
 
-        return view(config('laravelusers.showIndividualUserBlade'))->withUser($user);
+        return null;
     }
 
     /**

@@ -13,18 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/users', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('auth:api')->post('user/{id}', function($id) {
-    //TODO
-});
+Route::middleware('auth:api')->post('users', 'UsersManagementController@create');
 
-Route::middleware('auth:api')->patch('user/{id}', function($id) {
-    //TODO
-});
+Route::middleware('auth:api')->patch('users', 'UsersManagementController@store');
 
-Route::middleware('auth:api')->delete('user/{id}', function($id) {
-    //TODO
-});
+Route::middleware('auth:api')->delete('users', 'UsersManagementController@destroy');
