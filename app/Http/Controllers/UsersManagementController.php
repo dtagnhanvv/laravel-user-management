@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 
 class UsersManagementController extends Controller
 {
-    use RegistersUsers;
-
     /**
      * Create a new controller instance.
      *
@@ -17,68 +14,6 @@ class UsersManagementController extends Controller
     public function __construct()
     {
         //TODO
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //TODO
-        return null;
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @param Request $request
-     * @return \Illuminate\Http\Response
-     */
-    public function create(Request $request)
-    {
-        return $this->register($request);
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //TODO
-        return null;
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param int $id
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //TODO
-
-        return null;
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param int $id
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //TODO
-        return null;
     }
 
     /**
@@ -103,19 +38,6 @@ class UsersManagementController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
-        //TODO
-        return null;
-    }
-
-    /**
-     * Method to search the users.
-     *
-     * @param Request $request
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function search(Request $request)
     {
         //TODO
         return null;

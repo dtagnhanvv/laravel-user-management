@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('api/login', 'Auth\LoginController@login');
+Route::get('users/login', 'Auth\LoginController@login');
+
+Route::post('users/register', 'Auth\RegisterController@register');
