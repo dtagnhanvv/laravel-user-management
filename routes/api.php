@@ -16,3 +16,15 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::middleware('auth:api')->post('user/{id}', function($id) {
+    //TODO
+});
+
+Route::middleware('auth:api')->patch('user/{id}', function($id) {
+    //TODO
+});
+
+Route::middleware('auth:api')->delete('user/{id}', function($id) {
+    //TODO
+});
