@@ -16,5 +16,3 @@ Route::get('/', function () {
 });
 
 Route::get('users/login', 'Auth\LoginController@login');
-
-Route::post('users/register', 'Auth\RegisterController@register');
