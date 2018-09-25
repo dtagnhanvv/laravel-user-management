@@ -50,6 +50,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         Log::debug("Validate new user");
+        Log::channel('slack')->info('Validate some fields');
 
         return Validator::make($data, [
             'name' => 'required|string|max:255',
